@@ -1,0 +1,18 @@
+.box {
+    background-color: getColour(default-light-yellow);
+    height: 230px;
+    width: 230px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+    &__pink__border {
+        border: 2px solid getColour(default-dark-pink);
+    }
+
+    &__pink {
+        background-color: getColour(default-dark-pink);
+    }
+}

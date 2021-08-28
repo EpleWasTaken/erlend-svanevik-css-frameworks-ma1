@@ -1,0 +1,22 @@
+footer {
+    background-color: getColour(default-light-yellow);
+    flex-shrink: 0;
+    font-family: $default-font;
+
+
+    .footer__text {
+        margin-top: 0 auto;
+
+        @extend .container-flex;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 100px;
+    }
+
+    .footer__text {
+        flex-direction: column;
+    }
+}

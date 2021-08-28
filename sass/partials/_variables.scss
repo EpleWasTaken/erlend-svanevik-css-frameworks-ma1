@@ -1,0 +1,16 @@
+$colours: (
+    default-white: #ffffff,
+    default-dark-grey: #6A6A6A,
+    default-lightest-grey: #E2E2E2,
+    default-light-grey: #E5E5E5,
+    default-lightdark-grey: #8D8D8D,
+    default-dark-pink: #C32C72,
+    default-light-yellow: #F4F3EE
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour)
+}
+
+$default-font: "open sans", sans-serif;
+$secondary-font: "Archivo Narrow", sans-serif;

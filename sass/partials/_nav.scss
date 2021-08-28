@@ -1,0 +1,45 @@
+nav {
+    background: getColour(default-light-yellow);
+
+    .container {
+        @extend .container-flex
+    }
+
+    .logo {
+        font-size: 2em;
+        color: black;
+        font-weight: bold;
+        font-family: $default-font;
+        text-decoration: none;
+    }
+    
+    .nav-link {
+        color: getColour(default-dark-grey);
+        font-family: $secondary-font;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .nav-link.active {
+        color: getColour(default-dark-pink) !important;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        margin-top: auto;
+    }
+    
+    li {
+        margin-right: 1em;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
